@@ -8,7 +8,7 @@
 	<div class="container">
 		<h1>Employee Management System</h1>
 		<hr>
-		<h2>Save Employee</h2>
+		<h2>Update Employee</h2>
 		<br>
 		<form action="#" th:action="@{/saveEmployee}" th:object="${employee}" method="POST">
 			<input type="text" th:field="*{firstName}"
@@ -19,6 +19,7 @@
 			placeholder="Employee Email" class="form-control mb-4 col-4">
 			<button type="submit" class="btn btn-info col-2">Save Employee</button>
 		</form>
+		<a th:href="@{/}">Go back to display list</a>
 	</div>
 </body>
 </html>
