@@ -6,4 +6,5 @@ import com.sammyGoJS.springboot.model.Employee;
 
 public interface EmployeeService {
 	List<Employee>getAllEmployees();
+	Employee saveEmployee(Employee employee);
 }
